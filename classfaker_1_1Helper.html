@@ -1,11 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Faker C++: faker::Helper Class Reference</title>
+<title>Faker C++</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,17 +20,18 @@
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="main.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
-  <td id="projectalign">
+ <tr style="height: 56px;">
+  <td id="projectlogo"><a href="https://cieslarmichal.github.io/faker-cxx"><img height=50 alt="Logo" src="logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Faker C++
    </div>
-   <div id="projectbrief">C++ Faker library for generating testing data</div>
   </td>
  </tr>
  </tbody>
@@ -134,7 +136,7 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>shuffle
 <tr class="memdesc:a8241b8aa5d9c9ac41c35db12bcfc4087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the given string parsed symbol by symbol and replaced the placeholders with digits ("0" - "9"). "!" will be replaced by digits &gt;=2 ("2" - "9").  <br /></td></tr>
 <tr class="separator:a8241b8aa5d9c9ac41c35db12bcfc4087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5b961cfbb6d333449127750f9e95199" id="r_aa5b961cfbb6d333449127750f9e95199"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfaker_1_1Helper.html#aa5b961cfbb6d333449127750f9e95199">replaceCreditCardSymbols</a> (const std::string &amp;inputString=&quot;6453-####-####-####-###L&quot;, char symbol='#')</td></tr>
-<tr class="memdesc:aa5b961cfbb6d333449127750f9e95199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns credit card schema with replaced symbols and patterns in a credit card including Luhn checksum This method supports both range patterns <code>[4-9]</code> as well as the patterns used by <code><a class="el" href="classfaker_1_1Helper.html#a8241b8aa5d9c9ac41c35db12bcfc4087" title="Returns the given string parsed symbol by symbol and replaced the placeholders with digits (&quot;0&quot; - &quot;9&quot;...">replaceSymbolWithNumber()</a></code>. <code>L</code> will be replaced with the appropriate Luhn checksum.  <br /></td></tr>
+<tr class="memdesc:aa5b961cfbb6d333449127750f9e95199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns credit card schema with replaced symbols and patterns in a credit card including Luhn checksum This method supports both range patterns `[4-9]` as well as the patterns used by `replaceSymbolWithNumber()`. `L` will be replaced with the appropriate Luhn checksum.  <br /></td></tr>
 <tr class="separator:aa5b961cfbb6d333449127750f9e95199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad97b7e42b9f650bdea9ecba04b135768" id="r_ad97b7e42b9f650bdea9ecba04b135768"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfaker_1_1Helper.html#ad97b7e42b9f650bdea9ecba04b135768">regexpStyleStringParse</a> (const std::string &amp;input)</td></tr>
 <tr class="memdesc:ad97b7e42b9f650bdea9ecba04b135768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the replaced regex-like expression in the string with matching values.  <br /></td></tr>
@@ -284,7 +286,7 @@ template&lt;typename TResult &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>The callback to that will be invoked if the probability check was successful. </td></tr>
-    <tr><td class="paramname">probability</td><td>The probability (<code>[0.00, 1.00]</code>) of the callback being invoked. Defaults to <code>0.5</code>.</td></tr>
+    <tr><td class="paramname">probability</td><td>The probability (`[0.00, 1.00]`) of the callback being invoked. Defaults to `0.5`.</td></tr>
   </table>
   </dd>
 </dl>
@@ -376,9 +378,9 @@ template&lt;typename T &gt; </div>
 
 <p>Returns the replaced regex-like expression in the string with matching values. </p>
 <p>Supported patterns:</p><ul>
-<li><code>.{times}</code> =&gt; Repeat the character exactly <code>times</code> times.</li>
-<li><code>.{min,max}</code> =&gt; Repeat the character <code>min</code> to <code>max</code> times.</li>
-<li><code>[min-max]</code> =&gt; Generate a number between min and max (inclusive).</li>
+<li>`.{times}` =&gt; Repeat the character exactly `times` times.</li>
+<li>`.{min,max}` =&gt; Repeat the character `min` to `max` times.</li>
+<li>`[min-max]` =&gt; Generate a number between min and max (inclusive).</li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -431,7 +433,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns credit card schema with replaced symbols and patterns in a credit card including Luhn checksum This method supports both range patterns <code>[4-9]</code> as well as the patterns used by <code><a class="el" href="classfaker_1_1Helper.html#a8241b8aa5d9c9ac41c35db12bcfc4087" title="Returns the given string parsed symbol by symbol and replaced the placeholders with digits (&quot;0&quot; - &quot;9&quot;...">replaceSymbolWithNumber()</a></code>. <code>L</code> will be replaced with the appropriate Luhn checksum. </p>
+<p>Returns credit card schema with replaced symbols and patterns in a credit card including Luhn checksum This method supports both range patterns `[4-9]` as well as the patterns used by `replaceSymbolWithNumber()`. `L` will be replaced with the appropriate Luhn checksum. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inputString</td><td>TThe credit card format pattern. Defaults to "6453-####-####-####-###L". </td></tr>

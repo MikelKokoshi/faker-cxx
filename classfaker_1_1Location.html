@@ -1,11 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Faker C++: faker::Location Class Reference</title>
+<title>Faker C++</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,17 +20,18 @@
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="main.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
-  <td id="projectalign">
+ <tr style="height: 56px;">
+  <td id="projectlogo"><a href="https://cieslarmichal.github.io/faker-cxx"><img height=50 alt="Logo" src="logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Faker C++
    </div>
-   <div id="projectbrief">C++ Faker library for generating testing data</div>
   </td>
  </tr>
  </tbody>
@@ -169,7 +171,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns a random building number for given country. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">country</td><td>The country to generate building number from. Defaults to <code>Country::Usa</code>.</td></tr>
+    <tr><td class="paramname">country</td><td>The country to generate building number from. Defaults to `Country::Usa`.</td></tr>
   </table>
   </dd>
 </dl>
@@ -206,7 +208,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns a random city for given country. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">country</td><td>The country to generate city from. Defaults to <code>Country::Usa</code>.</td></tr>
+    <tr><td class="paramname">country</td><td>The country to generate city from. Defaults to `Country::Usa`.</td></tr>
   </table>
   </dd>
 </dl>
@@ -333,7 +335,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Generates a random latitude. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">precision</td><td>The number of decimal points of precision for the latitude. Defaults to <code>Precision::FourDp</code>.</td></tr>
+    <tr><td class="paramname">precision</td><td>The number of decimal points of precision for the latitude. Defaults to `Precision::FourDp`.</td></tr>
   </table>
   </dd>
 </dl>
@@ -370,7 +372,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Generates a random longitude. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">precision</td><td>The number of decimal points of precision for the longitude. Defaults to <code>Precision::FourDp</code>.</td></tr>
+    <tr><td class="paramname">precision</td><td>The number of decimal points of precision for the longitude. Defaults to `Precision::FourDp`.</td></tr>
   </table>
   </dd>
 </dl>
@@ -407,7 +409,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns a random secondary address number for given country. This refers to a specific location at a given address such as an apartment or room number. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">country</td><td>The country to generate building number from. Defaults to <code>Country::Usa</code>.</td></tr>
+    <tr><td class="paramname">country</td><td>The country to generate building number from. Defaults to `Country::Usa`.</td></tr>
   </table>
   </dd>
 </dl>
@@ -474,7 +476,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns a random street for given country. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">country</td><td>The country to generate street from. Defaults to <code>Country::Usa</code>.</td></tr>
+    <tr><td class="paramname">country</td><td>The country to generate street from. Defaults to `Country::Usa`.</td></tr>
   </table>
   </dd>
 </dl>
@@ -511,7 +513,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns a random street address for given country. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">country</td><td>The country to generate street address from. Defaults to <code>Country::Usa</code>.</td></tr>
+    <tr><td class="paramname">country</td><td>The country to generate street address from. Defaults to `Country::Usa`.</td></tr>
   </table>
   </dd>
 </dl>
@@ -578,7 +580,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns a random zip code for given country. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">country</td><td>The country to generate zip code from. Defaults to <code>Country::Usa</code>.</td></tr>
+    <tr><td class="paramname">country</td><td>The country to generate zip code from. Defaults to `Country::Usa`.</td></tr>
   </table>
   </dd>
 </dl>

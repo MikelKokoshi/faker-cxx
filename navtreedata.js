@@ -25,23 +25,15 @@
 var NAVTREE =
 [
   [ "Faker C++", "index.html", [
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", "functions_func" ]
-      ] ]
-    ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+    [ "API", "annotated.html", [
+      [ "Modules", "annotated.html", "annotated_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"Airline_8h_source.html"
+"annotated.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

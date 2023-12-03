@@ -1,11 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Faker C++: faker::Datatype Class Reference</title>
+<title>Faker C++</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,17 +20,18 @@
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="main.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
-  <td id="projectalign">
+ <tr style="height: 56px;">
+  <td id="projectlogo"><a href="https://cieslarmichal.github.io/faker-cxx"><img height=50 alt="Logo" src="logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Faker C++
    </div>
-   <div id="projectbrief">C++ Faker library for generating testing data</div>
   </td>
  </tr>
  </tbody>
@@ -105,7 +107,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:adcc47b46212ca99e0eb8db4b888a678f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random boolean.  <br /></td></tr>
 <tr class="separator:adcc47b46212ca99e0eb8db4b888a678f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14388c664778b2822c23492498595dcd" id="r_a14388c664778b2822c23492498595dcd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfaker_1_1Datatype.html#a14388c664778b2822c23492498595dcd">boolean</a> (double probability)</td></tr>
-<tr class="memdesc:a14388c664778b2822c23492498595dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random boolean. <b>Note:</b> A probability of <code>0.75</code> results in <code>true</code> being returned <code>75%</code> of the calls; likewise <code>0.3</code> =&gt; <code>30%</code>. If the probability is <code>&lt;= 0.0</code>, it will always return <code>false</code>. If the probability is <code>&gt;= 1.0</code>, it will always return <code>true</code>. The probability is limited to two decimal places.  <br /></td></tr>
+<tr class="memdesc:a14388c664778b2822c23492498595dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random boolean. **Note:** A probability of `0.75` results in `true` being returned `75%` of the calls; likewise `0.3` =&gt; `30%`. If the probability is `&lt;= 0.0`, it will always return `false`. If the probability is `&gt;= 1.0`, it will always return `true`. The probability is limited to two decimal places.  <br /></td></tr>
 <tr class="separator:a14388c664778b2822c23492498595dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -163,10 +165,10 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a random boolean. <b>Note:</b> A probability of <code>0.75</code> results in <code>true</code> being returned <code>75%</code> of the calls; likewise <code>0.3</code> =&gt; <code>30%</code>. If the probability is <code>&lt;= 0.0</code>, it will always return <code>false</code>. If the probability is <code>&gt;= 1.0</code>, it will always return <code>true</code>. The probability is limited to two decimal places. </p>
+<p>Returns a random boolean. **Note:** A probability of `0.75` results in `true` being returned `75%` of the calls; likewise `0.3` =&gt; `30%`. If the probability is `&lt;= 0.0`, it will always return `false`. If the probability is `&gt;= 1.0`, it will always return `true`. The probability is limited to two decimal places. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">probability</td><td>The probability (<code>[0.00, 1.00]</code>) of returning <code>true</code>.</td></tr>
+    <tr><td class="paramname">probability</td><td>The probability (`[0.00, 1.00]`) of returning `true`.</td></tr>
   </table>
   </dd>
 </dl>

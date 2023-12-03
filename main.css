@@ -1,0 +1,44 @@
+a.header-style {
+    color: #10b981 !important;
+    font-size: 24px;
+    font-family: Helvetica, Arial, serif
+}
+
+a.text-style {
+    color: #49494a !important;
+    font-size: 17px;
+    font-family: Helvetica, Arial, serif
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.api-group {
+    background-color: #f6f6f7;
+    color: white;
+    height: auto;
+    padding-left: 1rem;
+    text-size-adjust: 100%;
+}
+
+.api-groups {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    width: 100%;
+    grid-gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
