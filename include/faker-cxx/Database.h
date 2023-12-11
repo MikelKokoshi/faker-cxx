@@ -1,9 +1,28 @@
 #pragma once
 
 #include <string>
+#include <vector>
 
 namespace faker
 {
+
+struct TableSchema
+{
+    std::string name;
+    std::vector<ColumnSchema> columns;
+};
+
+struct ColumnSchema
+{
+    std::string name;
+    std::string type;
+};
+
+const std::vector<std::string> sqlCommandFormats = {
+    "SELECT * FROM {table_name}",
+    "SELECT {table_columns} FROM {table_name}"
+};
+
 class Database
 {
 public:
@@ -61,5 +80,18 @@ public:
      * @endcode
      */
     static std::string mongoDbObjectId();
+
+    /**
+     * @brief Return a database table casually generated.
+     *
+     * @return TableSchema generated.
+     *
+     * @code
+     * Databse::table()
+     * @endcode
+     */
+    static TableSchema table();
+
+    static std::string sqlCommand();
 };
 }

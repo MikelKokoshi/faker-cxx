@@ -34,4 +34,27 @@ std::string Database::mongoDbObjectId()
 {
     return String::hexadecimal(24, HexCasing::Lower, HexPrefix::None);
 }
+
+TableSchema Database::table()
+{
+    TableSchema retval;
+
+    retval.name = "User";
+
+    ColumnSchema usernameColumn;
+    usernameColumn.name = "username";
+    usernameColumn.type = "string";
+
+    ColumnSchema emailColumn;
+    emailColumn.name = "email";
+    emailColumn.type = "string";
+
+    ColumnSchema ageColumn;
+    ageColumn.name = "age";
+    ageColumn.type = "int";
+
+    retval.columns.push_back(usernameColumn);
+    retval.columns.push_back(emailColumn);
+    retval.columns.push_back(ageColumn);
+}
 }
