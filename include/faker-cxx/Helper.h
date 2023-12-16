@@ -69,6 +69,33 @@ public:
         return data[index];
     }
 
+    template <class T>
+    static std::vector<T> arrayElements(const std::vector<T>& data)
+    {
+        if (data.empty())
+        {
+            throw std::invalid_argument{"Data is empty."};
+        }
+
+        const auto dimension = Number::integer<size_t>(1, data.size());
+        std::vector<T> outputVector;
+
+        while (outputVector.size() < dimension)
+        {
+            const auto randomIndex = Number::integer<size_t>(data.size() - 1);
+
+            // Check if the element is already in the output vector
+            if (std::find(outputVector.begin(), outputVector.end(), data[randomIndex]) != outputVector.end())
+            {
+                continue;
+            }
+
+            outputVector.push_back(data[randomIndex]);
+        }
+
+        return outputVector;
+    }
+
     /**
      * @brief Get a random element from a std::set.
      *

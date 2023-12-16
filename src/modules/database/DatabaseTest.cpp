@@ -26,6 +26,16 @@ TEST_F(DatabaseTest, shouldGenerateColumnName)
                                     { return generatedColumnName == columnName; }));
 }
 
+TEST_F(DatabaseTest, shouldGenerateSqlCommand)
+{
+    const auto generatedSqlCommand = Database::sqlCommand();
+
+    std::cout << generatedSqlCommand << std::endl;
+
+    // ASSERT_TRUE(std::ranges::any_of(columnNames, [generatedColumnName](const std::string& columnName)
+    //                                 { return generatedColumnName == columnName; }));
+}
+
 TEST_F(DatabaseTest, shouldGenerateColumnType)
 {
     const auto generatedColumnType = Database::columnType();
