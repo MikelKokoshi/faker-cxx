@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+#include <sstream>
 #include <string>
 #include <vector>
 
@@ -21,10 +23,28 @@ struct TableSchema
 {
     std::string name;
     std::vector<Column> columns;
+
+    std::string toString() const
+    {
+        std::stringstream ss;
+        ss << name << "(";
+        for (size_t i = 0; i < columns.size(); ++i)
+        {
+            ss << columns[i].name;
+            if (i < columns.size() - 1)
+            {
+                ss << ",";
+            }
+        }
+        ss << ")";
+        return ss.str();
+    }
 };
 
 const std::vector<std::string> sqlCommandFormats = {"SELECT * FROM {table_name};",
-                                                    "SELECT {table_columns} FROM {table_name};"};
+                                                    "SELECT {table_columns} FROM {table_name};",
+                                                    "DROP TABLE {table_name};",
+                                                    "INSERT INTO {table} VALUES {values}"};
 
 const std::vector<TableSchema> schemas = {
     TableSchema{"User", {Column{"username", "string"}, Column{"email", "string"}, Column{"age", "int"}}},
